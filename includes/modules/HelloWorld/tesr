@@ -1,0 +1,30 @@
+function border_width_figure(border_side_width)
+let border_width = '';
+if (attr.border_width_top === undefined && attr.border_width_right === undefined && attr.border_width_bottom === undefined && attr.border_width_left === undefined){
+   border_width = attr.border_width_all;
+} else {
+  border_width = `${attr.border_width_top !== undefined ? attr.border_width_top : attr.border_width_all} ${attr.border_width_right !== undefined ? attr.border_width_right : attr.border_width_all} ${attr.border_width_bottom !== undefined ? attr.border_width_bottom : attr.border_width_all} ${attr.border_width_left !== undefined ? attr.border_width_left : attr.border_width_all}`
+}
+
+
+let grid columns = 5;
+let grid rows = 3
+
+item 1 = two oolumns one row
+item 2 = one column two rows
+item 3 = two columns one row
+item 4 = two columns one row
+item 5 = one row one colum
+
+for(item as items){
+
+    grid_string;
+    item_number;
+    columns = item.columns
+    rows = item.rows
+    for(i = 1, i = columns; i++){
+       if(rows > 1){
+
+
+    }
+}

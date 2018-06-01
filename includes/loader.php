@@ -12,3 +12,9 @@ foreach ( (array) $module_files as $module_file ) {
 		require_once $module_file;
 	}
 }
+function _enqueue_scroll() {
+    $dir = plugins_url('/divilocal');
+    wp_enqueue_script('scroll',$dir.'/includes/scripts/jquery.tiltedpage-scroll.js','jquery');
+    wp_enqueue_style('scroll_css', $dir.'/includes/scripts/tiltedpage-scroll.css');
+}
+add_action('wp_enqueue_scripts','_enqueue_scroll');
